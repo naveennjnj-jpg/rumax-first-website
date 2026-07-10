@@ -34,8 +34,7 @@ export function Services() {
                   <span key={tag}>{tag}</span>
                 ))}
               </div>
-              {/* <a href={service.href}>Learn More</a> */}
-              <a href="https://rumax-second-frontend.vercel.app/" target="_blank">Learn More</a>
+              <a href={service.href}>Learn More</a>
               
             </div>
           </article>

@@ -64,7 +64,22 @@ body {
   min-width: 320px;
   overflow-x: hidden;
 }
+body .navbar__inner {
+    display: grid;
+    grid-template-columns: 190px 1fr auto;
+    align-items: center;
+}
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
 
+.btns a,
+.btns button {
+    white-space: nowrap;
+}
 img {
   display: block;
   max-width: 100%;
@@ -13316,6 +13331,9 @@ body {
       display: flex;
       flex-direction: column;
       gap: 22px;
+    }
+    .footer__bottom p span{
+      font-size: 14px;
     }
     .gdpr-section {
       padding: 64px 0;

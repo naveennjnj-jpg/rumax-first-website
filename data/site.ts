@@ -10,7 +10,7 @@ export const navLinks = [
 ];
 
 export const serviceDropdownLinks = [
-  { label: "Domiciliary Care/Personal Care Service", href: "https://rumax-second-frontend.vercel.app/" },
+  { label: "Domiciliary Care/Personal Care Service", href: "/domiciliary-and-personal-care" },
   { label: "Supported Living Service", href: "/supported-living" },
   { label: "Training", href: "/training-service" }
 ];
@@ -35,8 +35,7 @@ export const services = [
   {
     number: "01",
     title: "Domiciliary & Personal Care",
-  //  href: "/domiciliary-and-personal-care",
-    href: "https://rumax-second-frontend.vercel.app/",
+    href: "/domiciliary-and-personal-care",
     icon: "rumax-service-domiciliary.svg",
     description: "Compassionate care including end of life that focuses on choice, dignity, independence and privacy.",
     tags: ["Personal Care", "Medication Support", "Companionship"]
