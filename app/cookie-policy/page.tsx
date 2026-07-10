@@ -67,7 +67,7 @@ export default function CookiePolicyPage() {
         showScrollCue
       />
       <main className="cookie-policy-page ">
-        <div class="container">
+        <div className="container">
           <div className="cookie-policy-page__inner">
             {introSections.map(([title, body]) => (
               <section className="cookie-policy-copy" key={title}>

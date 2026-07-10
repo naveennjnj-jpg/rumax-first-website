@@ -266,23 +266,23 @@ export default function PrivacyPolicyPage() {
             </p>
           </div>
         </section>
-        <section class="gdpr-section">
-        <div class="wrap section-inner">
+        <section className="gdpr-section">
+        <div className="wrap section-inner">
           <h2>Third Party Sites</h2>
-          <div class="text-block">
-            <p class="body-text">Our website may contain links to third party websites, including websites via which you are able to purchase products and services. They are provided for your convenience only and we do not check, endorse, approve or agree with such third-party websites nor the products and/or services offered and sold on them.</p>
-            <p class="body-text">We have no responsibility for the content, product and/or services of the linked websites. Please ensure that you review all terms and conditions of website use and the Privacy Policy of any such third-party websites before use and before you submit any personal data to those websites.</p>
+          <div className="text-block">
+            <p className="body-text">Our website may contain links to third party websites, including websites via which you are able to purchase products and services. They are provided for your convenience only and we do not check, endorse, approve or agree with such third-party websites nor the products and/or services offered and sold on them.</p>
+            <p className="body-text">We have no responsibility for the content, product and/or services of the linked websites. Please ensure that you review all terms and conditions of website use and the Privacy Policy of any such third-party websites before use and before you submit any personal data to those websites.</p>
           </div>
         </div>
       </section>
-      <section class="gdpr-section gdpr-section-last">
-        <div class="wrap section-inner">
+      <section className="gdpr-section gdpr-section-last">
+        <div className="wrap section-inner">
           <h2>Complaints &amp; Supervisory Authority</h2>
-          <div class="body-text">
-            <p class="body-text">If you have any complaints about our use of your personal data, please contact us. You also have the right to complain to the relevant supervisory authority in your jurisdiction.</p>
-            <p class="body-text">In the UK, the supervisory authority is the Information Commissioner's Office (ICO).</p>
+          <div className="body-text">
+            <p className="body-text">If you have any complaints about our use of your personal data, please contact us. You also have the right to complain to the relevant supervisory authority in your jurisdiction.</p>
+            <p className="body-text">In the UK, the supervisory authority is the Information Commissioner's Office (ICO).</p>
           </div>
-          <a class="ico-link" href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">
+          <a className="ico-link" href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">
             Visit ICO Website
             <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7.5 3H15V10.5" stroke="#1B2280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
