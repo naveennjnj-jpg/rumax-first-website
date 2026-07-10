@@ -1,0 +1,31 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Container">
+<path d="M0 12C0 5.37258 5.37258 0 12 0H48C54.6274 0 60 5.37258 60 12V48C60 54.6274 54.6274 60 48 60H12C5.37258 60 0 54.6274 0 48V12Z" fill="url(#paint0_linear_8420_847)"/>
+<g id="Icon">
+<path id="Vector" d="M27.4213 34.3753C27.3097 33.9427 27.0842 33.5479 26.7683 33.232C26.4524 32.9161 26.0576 32.6907 25.625 32.5791L17.9563 30.6016C17.8255 30.5644 17.7103 30.4856 17.6283 30.3771C17.5463 30.2686 17.502 30.1363 17.502 30.0003C17.502 29.8643 17.5463 29.732 17.6283 29.6235C17.7103 29.515 17.8255 29.4362 17.9563 29.3991L25.625 27.4203C26.0575 27.3088 26.4522 27.0835 26.768 26.7679C27.0839 26.4522 27.3095 26.0577 27.4213 25.6253L29.3988 17.9566C29.4356 17.8252 29.5143 17.7095 29.6229 17.6271C29.7316 17.5446 29.8643 17.5 30.0007 17.5C30.1371 17.5 30.2697 17.5446 30.3784 17.6271C30.4871 17.7095 30.5658 17.8252 30.6025 17.9566L32.5788 25.6253C32.6904 26.0579 32.9159 26.4527 33.2318 26.7686C33.5477 27.0845 33.9425 27.31 34.375 27.4216L42.0438 29.3978C42.1757 29.4342 42.292 29.5128 42.3748 29.6217C42.4577 29.7305 42.5026 29.8635 42.5026 30.0003C42.5026 30.1371 42.4577 30.2701 42.3748 30.379C42.292 30.4878 42.1757 30.5664 42.0438 30.6028L34.375 32.5791C33.9425 32.6907 33.5477 32.9161 33.2318 33.232C32.9159 33.5479 32.6904 33.9427 32.5788 34.3753L30.6013 42.0441C30.5645 42.1754 30.4858 42.2911 30.3771 42.3736C30.2685 42.456 30.1358 42.5006 29.9994 42.5006C29.863 42.5006 29.7304 42.456 29.6217 42.3736C29.513 42.2911 29.4343 42.1754 29.3975 42.0441L27.4213 34.3753Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M40 18.75V23.75" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M42.5 21.25H37.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M20 36.25V38.75" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M21.25 37.5H18.75" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_8420_847" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1B2280"/>
+<stop offset="0.0714286" stop-color="#222280"/>
+<stop offset="0.142857" stop-color="#282380"/>
+<stop offset="0.214286" stop-color="#2D2380"/>
+<stop offset="0.285714" stop-color="#322380"/>
+<stop offset="0.357143" stop-color="#372380"/>
+<stop offset="0.428571" stop-color="#3C2280"/>
+<stop offset="0.5" stop-color="#412280"/>
+<stop offset="0.571429" stop-color="#452180"/>
+<stop offset="0.642857" stop-color="#4A2180"/>
+<stop offset="0.714286" stop-color="#4E2080"/>
+<stop offset="0.785714" stop-color="#531F80"/>
+<stop offset="0.857143" stop-color="#571E80"/>
+<stop offset="0.928571" stop-color="#5C1D80"/>
+<stop offset="1" stop-color="#601B80"/>
+</linearGradient>
+</defs>
+</svg>

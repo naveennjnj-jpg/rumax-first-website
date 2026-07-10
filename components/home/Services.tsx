@@ -1,0 +1,46 @@
+import { services } from "@/data/site";
+import { AssetImage } from "@/components/ui/AssetImage";
+import { SectionTitle } from "@/components/ui/SectionTitle";
+
+export function Services() {
+  const homepageServices = [services[0], services[1], services[3]];
+
+  return (
+    <section className="services section">
+      <SectionTitle
+        className="services-title"
+        mark="rumax-services-mark.svg"
+        markClass="section-mark--services"
+        title={
+          <>
+            Services tailored to meet the unique <strong>Needs of Each Client</strong>
+          </>
+        }
+      />
+      <div className="container services-grid">
+        {homepageServices.map((service, index) => (
+          <article className="service-card" key={service.title}>
+            <AssetImage
+              className={`service-card__icon${service.largeIcon ? " service-card__icon--large" : ""}`}
+              name={service.icon}
+              aria-hidden="true"
+            />
+            <div>
+              <span className="service-card__number">{String(index + 1).padStart(2, "0")}</span>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+              <div className="tags">
+                {service.tags.map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+              </div>
+              {/* <a href={service.href}>Learn More</a> */}
+              <a href="https://rumax-second-frontend.vercel.app/" target="_blank">Learn More</a>
+              
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
