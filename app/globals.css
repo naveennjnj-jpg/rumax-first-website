@@ -41,7 +41,7 @@ h4 {
 }
 
 span,p,a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500
 }
 * {
@@ -75,7 +75,12 @@ body .navbar__inner {
     gap: 12px;
     flex-wrap: nowrap;
 }
-
+a.login-btn.swicthbtn {
+    background: transparent;
+    border-color: #601b80;
+    border: 2px solid #601b80;
+    color: #601b80;
+}
 .btns a,
 .btns button {
     white-space: nowrap;

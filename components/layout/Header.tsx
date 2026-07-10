@@ -97,7 +97,7 @@ export function Header() {
             })}
           </nav>
           <div className="btns">
-            <a className="login-btn" target="_blank" href="https://rumax-second-frontend.vercel.app/">
+            <a className="login-btn swicthbtn" href="https://rumax-second-frontend.vercel.app/">
               Switch to Clinical Trial
             </a>  
             <a className="login-btn" href="/contact-us">
