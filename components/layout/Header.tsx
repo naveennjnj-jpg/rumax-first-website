@@ -98,11 +98,11 @@ export function Header() {
           </nav>
           <div className="btns">
             <a className="login-btn swicthbtn" href="https://rumax-second-frontend.vercel.app/">
-              Switch to Clinical Trial
+              Switch to Clinical Trials and Site Support services
             </a>  
-            <a className="login-btn" href="/contact-us">
+            {/* <a className="login-btn" href="/contact-us">
               Login
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

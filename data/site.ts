@@ -74,7 +74,7 @@ export const complianceLogos = [
   { label: "CQC", icon: "rumax-compliance-cqc.png" },
   { label: "NHS", icon: "rumax-compliance-nhs.png" },
   { label: "ICO", icon: "rumax-compliance-ico.png" },
-  { label: "ISO", icon: "rumax-compliance-iso.png" },
+  { label: "ISO", icon: "newlogo.png" },
   { label: "Cyber Essentials", icon: "rumax-compliance-cyber.png" }
 ];
 

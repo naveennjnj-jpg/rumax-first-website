@@ -26,7 +26,7 @@ export function Services() {
               aria-hidden="true"
             />
             <div>
-              <span className="service-card__number">{String(index + 1).padStart(2, "0")}</span>
+              {/* <span className="service-card__number">{String(index + 1).padStart(2, "0")}</span> */}
               <h3>{service.title}</h3>
               <p>{service.description}</p>
               <div className="tags">
