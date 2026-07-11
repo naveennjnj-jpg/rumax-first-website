@@ -215,6 +215,6 @@ export const footerBadges = [
   { label: "CQC", icon: "rumax-footer-cqc.png" },
   { label: "ICO", icon: "rumax-footer-ico.png" },
   { label: "NHS", icon: "rumax-footer-nhs.png" },
-  { label: "ISO", icon: "rumax-footer-iso.png" },
+  { label: "ISO", icon: "newlogo.png" },
   { label: "Cyber Essentials", icon: "rumax-footer-cyber.png" }
 ];
