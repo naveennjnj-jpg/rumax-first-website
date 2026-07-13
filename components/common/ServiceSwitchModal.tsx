@@ -40,12 +40,12 @@ export function ServiceSwitchModal({
         >
           &times;
         </button>
-        <h2 className="modalhead" style={{ fontSize: "24px", textAlign: "left" }}>Do you want to switch to clinical Trials and site support service?</h2>
-        <p id="service-switch-title" style={{ textAlign: "left" }} className={styles.text}>
+        <h2 className="modalhead" style={{ fontSize: "24px", textAlign: "left" }}>You are currently on our Care Support Services. If you would like to switch to Clinical Trials and Site Support services, please switch here</h2>
+        {/* <p id="service-switch-title" style={{ textAlign: "left" }} className={styles.text}>
           You are currently on our Care Support Services. If you'd like to
           switch to Clinical Trials and Site Support services, please switch
           here.
-        </p>
+        </p> */}
 
         <div className={styles.actions}>
           <a href={switchHref} className={styles.switchButton}>
