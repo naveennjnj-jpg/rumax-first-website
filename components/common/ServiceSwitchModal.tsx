@@ -40,7 +40,7 @@ export function ServiceSwitchModal({
         >
           &times;
         </button>
-        <h2 className="modalhead" style={{ fontSize: "20px", textAlign: "left" ,line-height: 35px;}}>You are currently on our Care Support Services. If you would like to switch to Clinical Trials <br></br>and Site Support services, please switch here</h2>
+        <h2 className="modalhead" style={{ fontSize: "20px", textAlign: "left" ,lineheight: "35px"}}>You are currently on our Care Support Services. If you would like to switch to Clinical Trials <br></br>and Site Support services, please switch here</h2>
         {/* <p id="service-switch-title" style={{ textAlign: "left" }} className={styles.text}>
           You are currently on our Care Support Services. If you'd like to
           switch to Clinical Trials and Site Support services, please switch
