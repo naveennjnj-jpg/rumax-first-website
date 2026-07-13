@@ -40,7 +40,7 @@ export function ServiceSwitchModal({
         >
           &times;
         </button>
-
+        <h2>Do you want to switch to clinical Trials and site support service?</h2>
         <p id="service-switch-title" className={styles.text}>
           You are currently on our Care Support Services. If you'd like to
           switch to Clinical Trials and Site Support services, please switch
