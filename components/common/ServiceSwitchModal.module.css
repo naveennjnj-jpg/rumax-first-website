@@ -1,87 +1,132 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background: #000000e3;
+  background: rgba(0, 0, 0, 0.82);
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  z-index: 1000;
+  align-items: flex-start;
+  padding: 24px;
+  z-index: 9999;
 }
 
 .modal {
   position: relative;
+  width: min(1220px, 100%);
+  margin-top: 10px;
   background: #fff;
-  border-radius: 12px;
-  padding: 0px 32px 32px;
-  width: 90%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  top: 10%;
+  border-radius: 36px;
+  border: 6px solid #d8e7ff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .25);
+  overflow: hidden;
 }
 
-.closeButton {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  background: #cccccc;
-  border: none;
-  font-size: 24px;
-  line-height: 1;
-  cursor: pointer;
-  color: #666;
-  border-radius: 50%;
-}
-h2.modalhead{
-  font-size: 24px;
-  text-align:right;
-}
-.closeButton:hover {
-  color: #000;
+.content {
+  padding: 48px 42px 32px;
 }
 
-.text {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 24px;
+.heading {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.65;
+  font-weight: 400;
   color: #222;
+  max-width: 900px;
+  text-align: left;
 }
 
-.actions {
+.buttons {
   display: flex;
-  gap: 12px;
   justify-content: flex-end;
-  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 60px;
 }
 
-.switchButton,
-.stayButton {
-  padding: 10px 24px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1px solid transparent;
+.primary,
+.secondary {
+  min-width: 155px;
+  height: 58px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  display: inline-block;
+  cursor: pointer;
+  transition: .2s;
 }
 
-.switchButton {
-  background: #601b80; /* adjust to your brand color */
+.primary {
+  background: #6d1b87;
   color: #fff;
 }
-p#service-switch-title {
-    text-align: left;
-}
-.switchButton:hover {
-  opacity: 0.9;
+
+.primary:hover {
+  background: #58156d;
 }
 
-.stayButton {
+.secondary {
   background: #fff;
-  color: #333;
-  border-color: #ccc;
+  border: 1px solid #bfbfbf;
+  color: #666;
 }
 
-.stayButton:hover {
-  background: #f5f5f5;
+.secondary:hover {
+  background: #f6f6f6;
+}
+
+.close {
+  position: absolute;
+  top: 26px;
+  right: 28px;
+  width: 58px;
+  height: 58px;
+  border: none;
+  border-radius: 50%;
+  background: #d8d7ee;
+  color: #2b2349;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close:hover {
+  background: #cccbe8;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    border-radius: 20px;
+    border-width: 4px;
+  }
+
+  .content {
+    padding: 70px 20px 24px;
+  }
+
+  .heading {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .buttons {
+    margin-top: 36px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary,
+  .secondary {
+    width: 100%;
+  }
+
+  .close {
+    width: 46px;
+    height: 46px;
+    font-size: 22px;
+    top: 14px;
+    right: 14px;
+  }
 }
