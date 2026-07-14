@@ -1,7 +1,9 @@
 .home-page {
   background: #ffffff;
 }
-
+.scroll-cue {
+    display: none !important;
+}
 .home-page .container {
   width: min(1536px, calc(100% - 100px));
 }
