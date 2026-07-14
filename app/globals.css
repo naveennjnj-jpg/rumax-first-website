@@ -72,6 +72,9 @@ body .navbar__inner {
 .scroll-cue {
     display: none !important;
 }
+.inner-scroll-cue {
+    display: none !important;
+}
 .btns {
     display: flex;
     align-items: center;
