@@ -10,11 +10,22 @@ import { Services } from "@/components/home/Services";
 import { TeamVideos } from "@/components/home/TeamVideos";
 import { Trust } from "@/components/home/Trust";
 
-export default function HomePage() {
+export default async function HomePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ switched?: string }>;
+}) {
+  const params = await searchParams;
+  const isSwitched = params.switched === "true";
+
   return (
     <>
       <Header />
-       <ServiceSwitchModal switchHref="https://rumax-second-frontend.vercel.app/" />
+
+      {!isSwitched && (
+        <ServiceSwitchModal switchHref="https://rumax-second-frontend.vercel.app/?switched=true" />
+      )}
+
       <main className="home-page">
         <Hero />
         <Services />
@@ -25,6 +36,7 @@ export default function HomePage() {
         <CareCta />
         <Locations />
       </main>
+
       <Footer />
     </>
   );
