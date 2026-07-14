@@ -7,57 +7,48 @@ interface ServiceSwitchModalProps {
   switchHref?: string;
 }
 
-export function ServiceSwitchModal({
+export default function ServiceSwitchModal({
   switchHref = "/clinical-trials",
 }: ServiceSwitchModalProps) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [open, setOpen] = useState(true);
 
-  const handleClose = () => {
-    console.log("closing modal"); // remove after confirming this fixes it
-    setIsOpen(false);
-  };
-
-  if (!isOpen) return null;
+  if (!open) return null;
 
   return (
-    <div
-      className={styles.overlay}
-      role="presentation"
-      onClick={handleClose}
-    >
+    <div className={styles.overlay} onClick={() => setOpen(false)}>
       <div
         className={styles.modal}
+        onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
-        aria-labelledby="service-switch-title"
-        onClick={(e) => e.stopPropagation()}
       >
         <button
-          type="button"
-          className={styles.closeButton}
-          onClick={handleClose}
+          className={styles.close}
+          onClick={() => setOpen(false)}
           aria-label="Close"
         >
-          &times;
+          ✕
         </button>
-        <h2 className="modalhead" style={{ fontSize: "20px", textAlign: "left" ,lineheight: "35px"}}>You are currently on our Care Support Services. If you would like to switch to Clinical Trials <br></br>and Site Support services, please switch here</h2>
-        {/* <p id="service-switch-title" style={{ textAlign: "left" }} className={styles.text}>
-          You are currently on our Care Support Services. If you'd like to
-          switch to Clinical Trials and Site Support services, please switch
-          here.
-        </p> */}
 
-        <div className={styles.actions}>
-          <a href={switchHref} className={styles.switchButton}>
-            Switch
-          </a>
-          <button
-            type="button"
-            className={styles.stayButton}
-            onClick={handleClose}
-          >
-            Stay Here
-          </button>
+        <div className={styles.content}>
+          <h2 className={styles.heading}>
+            You are currently on our Care Support Services. If you would like
+            to switch to Clinical Trials and Site Support Services, please
+            switch here.
+          </h2>
+
+          <div className={styles.buttons}>
+            <a href={switchHref} className={styles.primary}>
+              Switch Now
+            </a>
+
+            <button
+              className={styles.secondary}
+              onClick={() => setOpen(false)}
+            >
+              Stay Here
+            </button>
+          </div>
         </div>
       </div>
     </div>
