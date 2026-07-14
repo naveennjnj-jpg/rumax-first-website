@@ -1,23 +1,44 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./ServiceSwitchModal.module.css";
 
 interface ServiceSwitchModalProps {
   switchHref?: string;
 }
 
+const COOKIE_NAME = "service_switch_modal_seen";
+
 export function ServiceSwitchModal({
   switchHref = "/clinical-trials",
 }: ServiceSwitchModalProps) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const hasSeen = document.cookie
+      .split("; ")
+      .find((row) => row.startsWith(`${COOKIE_NAME}=`));
+
+    if (!hasSeen) {
+      setOpen(true);
+    }
+  }, []);
+
+  const closeModal = () => {
+    // Save cookie for 30 days
+    document.cookie = `${COOKIE_NAME}=true; path=/; max-age=${
+      60 * 60 * 24 * 30
+    }; SameSite=Lax`;
+
+    setOpen(false);
+  };
 
   if (!open) return null;
 
   return (
     <div
       className={styles.overlay}
-      onClick={() => setOpen(false)}
+      onClick={closeModal}
     >
       <div
         className={styles.modal}
@@ -29,7 +50,7 @@ export function ServiceSwitchModal({
         <button
           type="button"
           className={styles.close}
-          onClick={() => setOpen(false)}
+          onClick={closeModal}
           aria-label="Close"
         >
           ✕
@@ -46,6 +67,7 @@ export function ServiceSwitchModal({
             <a
               href={switchHref}
               className={styles.primary}
+              onClick={closeModal}
             >
               Switch Now
             </a>
@@ -53,7 +75,7 @@ export function ServiceSwitchModal({
             <button
               type="button"
               className={styles.secondary}
-              onClick={() => setOpen(false)}
+              onClick={closeModal}
             >
               Stay Here
             </button>
