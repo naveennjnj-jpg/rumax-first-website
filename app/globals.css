@@ -82,10 +82,25 @@ body .navbar__inner {
     flex-wrap: nowrap;
 }
 a.login-btn.swicthbtn {
-    background: transparent;
+    background: #601b80;
     border-color: #601b80;
     border: 2px solid #601b80;
-    color: #601b80;
+    color: #fff;
+}
+.login-btn.swicthbtn {
+  transition: transform 0.2s ease;
+}
+
+.login-btn.swicthbtn:hover {
+  animation: heartbeat 1s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  14%  { transform: scale(1.15); }
+  28%  { transform: scale(1); }
+  42%  { transform: scale(1.15); }
+  70%  { transform: scale(1); }
 }
 .btns a,
 .btns button {
